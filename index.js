@@ -1,3 +1,4 @@
+// The function is used for collecting input value from input and controlling increament, decreament
 function ticketCounter(name, inputId) {
     var Input = document.getElementById(inputId + 'Input');
     input = parseFloat(Input.value);
@@ -19,9 +20,7 @@ function ticketCounter(name, inputId) {
 function totalCalculator() {
     var firstInput = document.getElementById('firstInput');
     var economyInput = document.getElementById('economyInput');
-    var firstTicket = firstInput.value * 150;
-    var economyTicket = economyInput.value * 100;
-    var subtotal = (firstTicket + economyTicket);
+    subtotal = firstInput.value * 150 + economyInput.value * 100;
     document.getElementById('subtotal').innerText = '$' + subtotal;
     var tax = subtotal * 0.1;
     document.getElementById('tax').innerText = tax;

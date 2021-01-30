@@ -127,7 +127,7 @@ nav ul li a:hover, a.active{
     height: 100px;
     background-color:whitesmoke;
     display: none;
-    color: red;
+    color: rgb(0, 255, 21);
     text-align: center;
     margin-right: 180px;
     line-height: 2.5 rem;
