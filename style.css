@@ -120,3 +120,15 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+
+
+#extra{
+    width: 600px;
+    height: 100px;
+    background-color:whitesmoke;
+    display: none;
+    color: red;
+    text-align: center;
+    margin-right: 180px;
+    line-height: 2.5 rem;
+}

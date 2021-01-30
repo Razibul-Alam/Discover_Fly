@@ -1,5 +1,5 @@
-function ticketHandaler(name, inpt) {
-    var Input = document.getElementById(inpt + 'Input');
+function ticketCounter(name, inputId) {
+    var Input = document.getElementById(inputId + 'Input');
     input = parseFloat(Input.value);
     if (name == 'decrease') {
         if (input < 1) {
@@ -12,11 +12,11 @@ function ticketHandaler(name, inpt) {
         var newinptvalue = input + 1
     }
     Input.value = newinptvalue;
-    getInput();
+    totalCalculator();
 }
 
-
-function getInput() {
+// The function is used for calculating subtotal,tax and grand total
+function totalCalculator() {
     var firstInput = document.getElementById('firstInput');
     var economyInput = document.getElementById('economyInput');
     var firstTicket = firstInput.value * 150;
@@ -27,4 +27,12 @@ function getInput() {
     document.getElementById('tax').innerText = tax;
     var grandTotal = subtotal + tax;
     document.getElementById('grandtotal').innerText = grandTotal;
+
 }
+
+// Booking button section just send a confirmation massage
+document.getElementById('booknow').addEventListener('click', function () {
+    document.getElementById('booking-form').style.display = "none";
+    document.getElementById('extra').style.display = "block";
+
+})

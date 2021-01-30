@@ -28,7 +28,7 @@
 
     <!--Booking Section-->
     <main class="main-content container">
-        <div class="booking-form">
+        <div class="booking-form" id="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -54,7 +54,7 @@
                     <input class="inp-style inp-width" type="number" id="firstInput" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <span onclick="ticketHandaler('increase', 'first')">+</span> <span onclick="ticketHandaler('decrease','first')">-</span>
+                    <span onclick="ticketCounter('increase', 'first')">+</span> <span onclick="ticketCounter('decrease','first')">-</span>
                 </div>
             </div>
             
@@ -64,7 +64,7 @@
                     <input class="inp-style inp-width" type="number" name="" id="economyInput" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span onclick="ticketHandaler('increase', 'economy')">+</span> <span onclick="ticketHandaler('decrease', 'economy')">-</span> </p>
+                    <p> <span onclick="ticketCounter('increase', 'economy')">+</span> <span onclick="ticketCounter('decrease', 'economy')">-</span> </p>
                 </div>
             </div>
             <div class="calculations">
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button class="btn-style" id="booknow">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -103,6 +103,11 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
         </div>
     </section>
+    <div id="extra">
+        <h2 id="payment">Hello your E-Ticket booking done successfully</h2>
+        <h3>Have a nice journey</h3>
+        <h3>THANKS</h3>
+    </div>
 
     <!--Thank You-->
     <script src="index.js"></script>
